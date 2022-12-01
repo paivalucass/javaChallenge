@@ -34,23 +34,23 @@ window.addEventListener("keydown", (event) => {   // where the magic happens
         }
     }
 
-    if(key === "ArrowDown"){  // se a tecla "para baixo" for pressionada E a posição na vertical for < ALTURA_DA_TELA
+    if(key === "ArrowDown"){  // se a tecla "para baixo" for pressionada 
         character.classList.add("turnDown");    // boneco vira para baixo 
-        if (yPosition < SCREEN_HEIGHT){
+        if (yPosition < SCREEN_HEIGHT){   // se a posição na vertical for < ALTURA_DA_TELA
             yPosition += VELOCITY; // posição do boneco muda (movimento para baixo)
         }
     }
 
-    if(key === "ArrowLeft"){   // se a tecla "para esquerda" for pressionada E a posição na horizontal for > 0
+    if(key === "ArrowLeft"){   // se a tecla "para esquerda" for pressionada 
         character.classList.add("turnLeft");    // boneco vira para esquerda
-        if (xPosition > 0){
+        if (xPosition > 0){  // se a posição na horizontal for > 0
             xPosition -= VELOCITY;    // posição do boneco muda (movimento para esquerda)
         }
     }
 
-    if(key === "ArrowRight"){  // se a tecla "para direita" for pressionada E a posição na horizontal for < LARGURA_DA_TELA
+    if(key === "ArrowRight"){  // se a tecla "para direita" for pressionada 
         character.classList.add("turnRight");      // boneco vira para direita
-        if (xPosition < SCREEN_WIDTH){
+        if (xPosition < SCREEN_WIDTH){   // se a posição na horizontal for < LARGURA_DA_TELA
             xPosition += VELOCITY;  // posição do boneco muda (movimento para direita)
         }
     }
